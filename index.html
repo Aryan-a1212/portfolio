@@ -1,9 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Aryan Maheshwari | Cloud & Linux Engineer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@ color:#38bdf8;
 /* HERO */
 
 .hero{
-height:90vh;
+height:95vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -71,7 +71,7 @@ padding:20px;
 }
 
 .hero h1{
-font-size:55px;
+font-size:60px;
 color:white;
 }
 
@@ -80,9 +80,10 @@ color:#38bdf8;
 }
 
 .hero p{
-margin-top:10px;
+margin-top:12px;
 font-size:18px;
 color:#94a3b8;
+max-width:600px;
 }
 
 .btn{
@@ -94,12 +95,13 @@ background:#38bdf8;
 color:#020617;
 font-weight:600;
 cursor:pointer;
+text-decoration:none;
 }
 
 /* SECTIONS */
 
 section{
-padding:90px 10%;
+padding:100px 10%;
 max-width:1200px;
 margin:auto;
 }
@@ -124,13 +126,13 @@ margin-bottom:20px;
 
 .skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
 .skill{
 background:#020617;
-padding:15px;
+padding:18px;
 border-radius:8px;
 border:1px solid #1e293b;
 }
@@ -139,13 +141,13 @@ border:1px solid #1e293b;
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 }
 
 .project{
 background:#020617;
-padding:20px;
+padding:25px;
 border-radius:10px;
 border:1px solid #1e293b;
 }
@@ -171,7 +173,7 @@ color:#64748b;
 @media(max-width:768px){
 
 .hero h1{
-font-size:36px;
+font-size:38px;
 }
 
 nav ul{
@@ -187,74 +189,121 @@ display:none;
 
 <nav>
 <h2>Aryan</h2>
+
 <ul>
 <li><a href="#about">Profile</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#experience">Experience</a></li>
 <li><a href="#projects">Projects</a></li>
+<li><a href="#certifications">Certifications</a></li>
 <li><a href="#education">Education</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
 
+
 <section class="hero">
+
 <h1>Aryan <span>Maheshwari</span></h1>
-<p>Cloud & Linux Engineer | DevOps Enthusiast</p>
-<button class="btn">Download Resume</button>
+
+<p>
+Cloud & Linux Engineer passionate about building scalable infrastructure, 
+automation systems, and cloud-based solutions using AWS and DevOps tools.
+</p>
+
+<a href="Aryan-Resume.pdf" class="btn">Download Resume</a>
+
 </section>
 
+
 <section id="about">
+
 <h2 class="title">Profile</h2>
 
 <div class="card">
-Final-year B.Tech student with strong knowledge of Linux administration and AWS cloud fundamentals. Experienced with DevOps tools, automation scripting, and infrastructure management through projects and internships.
+
+Final-year B.Tech Computer Science student with strong expertise in Linux system 
+administration and AWS cloud fundamentals. Experienced with DevOps practices 
+including containerization, CI/CD pipelines, automation scripting, and cloud 
+infrastructure deployment.  
+
+Hands-on experience gained through academic projects and internship in server 
+management, log monitoring, and scalable cloud application deployment.
+
 </div>
 
 </section>
+
 
 <section id="skills">
 
-<h2 class="title">Skills</h2>
+<h2 class="title">Technical Skills</h2>
 
 <div class="skills">
 
-<div class="skill"><b>Cloud</b><br>AWS (EC2, S3, Lambda, API Gateway, DynamoDB, IAM)</div>
+<div class="skill">
+<b>Cloud Platforms</b><br>
+AWS EC2, S3, Lambda, DynamoDB, API Gateway, IAM, Cognito, CloudFormation
+</div>
 
-<div class="skill"><b>DevOps</b><br>Docker, Git/GitHub, CI/CD (GitHub Actions), Jira</div>
+<div class="skill">
+<b>DevOps Tools</b><br>
+Docker, Git, GitHub, CI/CD Pipelines (GitHub Actions)
+</div>
 
-<div class="skill"><b>Monitoring</b><br>CloudWatch, CloudTrail, AWS Config</div>
+<div class="skill">
+<b>Monitoring & Logging</b><br>
+CloudWatch, CloudTrail, AWS Config
+</div>
 
-<div class="skill"><b>Linux</b><br>Ubuntu, RedHat, CentOS, Shell Scripting</div>
+<div class="skill">
+<b>Linux Administration</b><br>
+Ubuntu, RedHat, CentOS, User & Permission Management, Cron Jobs
+</div>
 
-<div class="skill"><b>Networking</b><br>TCP/IP, DNS, HTTP, HTTPS, SSH</div>
+<div class="skill">
+<b>Networking</b><br>
+TCP/IP, DNS, HTTP/HTTPS, SSH
+</div>
 
-<div class="skill"><b>Programming</b><br>Python, Bash, JSON</div>
+<div class="skill">
+<b>Programming</b><br>
+Python, Bash, Shell Scripting, JSON
+</div>
 
 </div>
 
 </section>
 
+
 <section id="experience">
 
-<h2 class="title">Experience</h2>
+<h2 class="title">Professional Experience</h2>
 
 <div class="card">
 
 <h3>Linux & Cloud Intern — Grras IT Solutions</h3>
-<p>Nov 2025 – Feb 2026 | Ahmedabad</p>
+<p>Oct 2025 – Feb 2026 | Ahmedabad</p>
 
 <ul>
-<li>Worked on Linux system administration and automation scripting</li>
-<li>Managed server configurations, users, and package installations</li>
-<li>Gained hands-on AWS cloud fundamentals</li>
-<li>Implemented basic CI/CD workflows using Git and GitHub</li>
-<li>Monitored server performance and logs</li>
+
+<li>Performed Linux system administration including user management, package installation, and server configuration.</li>
+
+<li>Developed automation scripts using Bash to monitor system logs and server performance.</li>
+
+<li>Gained practical experience with AWS services including EC2 virtual machines and cloud storage.</li>
+
+<li>Implemented Git-based workflows and explored CI/CD automation concepts.</li>
+
+<li>Troubleshooted server issues using Linux diagnostic tools and log analysis.</li>
 
 </ul>
 
 </div>
 
 </section>
+
 
 <section id="projects">
 
@@ -262,45 +311,114 @@ Final-year B.Tech student with strong knowledge of Linux administration and AWS 
 
 <div class="projects">
 
+
 <div class="project">
+
 <h3>Log Analyzer & Report Generator</h3>
-<p>Bash automation tool that analyzes Linux logs and generates daily reports for error monitoring.</p>
+
+<ul>
+
+<li>Bash automation tool to parse Linux server logs and detect ERROR / CRITICAL events.</li>
+
+<li>Used Unix utilities (grep, awk, sed, sort, uniq) to analyze log patterns.</li>
+
+<li>Automated report generation with cron jobs for daily monitoring.</li>
+
+</ul>
+
 </div>
 
+
 <div class="project">
+
 <h3>College Timetable Generator</h3>
-<p>MERN stack system for automated timetable generation with conflict detection and Excel upload.</p>
+
+<ul>
+
+<li>MERN stack web application for automated academic timetable creation.</li>
+
+<li>Built modern UI using React, Vite, TailwindCSS and ShadCN UI.</li>
+
+<li>Implemented Excel upload system and conflict detection logic.</li>
+
+<li>Designed optimized MongoDB schemas and deployed on AWS cloud.</li>
+
+</ul>
+
 </div>
 
+
 <div class="project">
+
 <h3>Skill Swap Platform</h3>
-<p>Web platform enabling peer-to-peer skill exchange with modern UI and API integration.</p>
+
+<ul>
+
+<li>Developed responsive frontend for peer-to-peer skill exchange.</li>
+
+<li>Integrated REST APIs using Axios.</li>
+
+<li>Implemented form validation and reusable UI components.</li>
+
+<li>Optimized responsive UI for cross-device compatibility.</li>
+
+</ul>
+
 </div>
+
 
 </div>
 
 </section>
+
+
+<section id="certifications">
+
+<h2 class="title">Certifications</h2>
+
+<div class="card">
+• NPTEL — Internet of Things (IoT)
+</div>
+
+<div class="card">
+• NPTEL — Computer Networks
+</div>
+
+<div class="card">
+• Linux Certification
+</div>
+
+<div class="card">
+• On-Site Hackathon Participation
+</div>
+
+</section>
+
 
 <section id="education">
 
 <h2 class="title">Education</h2>
 
 <div class="card">
-B.Tech (Computer Science Engineering) — Parul University  
+B.Tech — Computer Science Engineering  
+Parul University  
 2022 – 2026
 </div>
 
 <div class="card">
-Higher Secondary Certificate — Zen School  
+Higher Secondary Certificate  
+Zen School  
 2022
 </div>
 
 <div class="card">
-Secondary School Certificate — Tree House High School  
+Secondary School Certificate  
+Tree House High School  
 2020
 </div>
 
 </section>
+
 
 <section id="contact">
 
@@ -309,17 +427,23 @@ Secondary School Certificate — Tree House High School
 <div class="contact card">
 
 <p>Email: aryan1maheshwari2389@gmail.com</p>
+
 <p>Phone: +91 8780150579</p>
+
 <p>Location: Ahmedabad, India</p>
+
+<p>LinkedIn: https://www.linkedin.com/in/aryan-maheshwari-496295266/</p>
 
 </div>
 
 </section>
 
+
 <footer>
+
 © 2026 Aryan Maheshwari | Cloud & Linux Engineer
+
 </footer>
 
 </body>
 </html>
-```
