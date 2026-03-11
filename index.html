@@ -1,3 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aryan Maheshwari | Cloud & Linux Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#020617,#0f172a);
+color:#e2e8f0;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(2,6,23,0.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:#cbd5f5;
+text-decoration:none;
+font-size:15px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin-top:15px;
+color:#94a3b8;
+max-width:600px;
+}
+
+.btn{
+margin-top:30px;
+padding:14px 30px;
+border-radius:8px;
+border:none;
+background:#38bdf8;
+color:#020617;
+font-weight:600;
+cursor:pointer;
+text-decoration:none;
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 12%;
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+font-size:34px;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+/* CARD */
+
+.card{
+background:rgba(2,6,23,0.8);
+padding:30px;
+border-radius:12px;
+border:1px solid #1e293b;
+margin-bottom:25px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#38bdf8;
+}
+
+/* PROJECT CARDS */
+
+.project-card{
+background:#020617;
+padding:25px;
+border-radius:12px;
+border:1px solid #1e293b;
+margin-bottom:25px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+border-color:#38bdf8;
+}
+
+.project-card h3{
+margin-bottom:10px;
+}
+
+/* LIST */
+
+ul{
+margin-top:10px;
+padding-left:18px;
+}
+
+li{
+margin-bottom:6px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:25px;
+background:#020617;
+margin-top:50px;
+color:#64748b;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h2>Aryan</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<section class="hero">
+
+<h1>Aryan <span>Maheshwari</span></h1>
+
+<p>
+Cloud & Linux Engineer passionate about building scalable cloud infrastructure,
+automation systems, and modern web applications.
+</p>
+
+<a href="Aryan-Resume.pdf" class="btn">Download Resume</a>
+
+</section>
+
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+Final-year Computer Science Engineering student with strong expertise in Linux
+administration, cloud computing, and automation. Experienced in building
+full-stack applications, cloud-based systems, and infrastructure monitoring
+tools through hands-on academic and internship projects.
+
+</div>
+
+</section>
+
+
 <section id="skills">
 
 <h2 class="title">Technical Skills</h2>
@@ -6,22 +246,144 @@
 
 <ul>
 
-<li><b>Cloud:</b> AWS (EC2, S3, Lambda, DynamoDB, API Gateway, IAM)</li>
+<li><b>Cloud:</b> AWS EC2, S3, Lambda, DynamoDB, IAM</li>
 
-<li><b>DevOps:</b> Docker, Git, GitHub, CI/CD using GitHub Actions</li>
+<li><b>DevOps:</b> Docker, Git, GitHub, CI/CD pipelines</li>
 
-<li><b>Linux:</b> Ubuntu, RedHat, CentOS, Shell Scripting, Cron Jobs</li>
+<li><b>Linux:</b> Ubuntu, RedHat, CentOS, Shell Scripting</li>
 
-<li><b>Monitoring:</b> AWS CloudWatch, CloudTrail, System Logs</li>
+<li><b>Monitoring:</b> AWS CloudWatch, CloudTrail</li>
 
 <li><b>Networking:</b> TCP/IP, DNS, HTTP/HTTPS, SSH</li>
 
 <li><b>Programming:</b> Python, Bash, JSON</li>
-
-<li><b>Tools:</b> Git, VS Code, Jira, Linux CLI</li>
 
 </ul>
 
 </div>
 
 </section>
+
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="project-card">
+
+<h3>Log Analyzer & Report Generator</h3>
+
+<ul>
+
+<li>Bash-based automation tool for analyzing Linux server logs.</li>
+
+<li>Parsed logs using grep, awk, sed, and other Unix utilities.</li>
+
+<li>Generated daily reports for error monitoring.</li>
+
+<li>Automated execution using cron jobs.</li>
+
+</ul>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>College Timetable Generator</h3>
+
+<ul>
+
+<li>MERN stack application for automated timetable generation.</li>
+
+<li>Excel upload system for teachers, subjects, and slots.</li>
+
+<li>Implemented conflict detection logic.</li>
+
+<li>MongoDB schema design for timetable data.</li>
+
+</ul>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Skill Swap Platform</h3>
+
+<ul>
+
+<li>Peer-to-peer platform for exchanging skills.</li>
+
+<li>Responsive frontend with modern UI components.</li>
+
+<li>REST API integration for backend communication.</li>
+
+<li>Optimized interface for multiple device sizes.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+
+<h3>B.Tech — Computer Science Engineering</h3>
+<p>Parul University | 2022 – 2026</p>
+
+<ul>
+<li>Focused on Cloud Computing and Linux Systems.</li>
+<li>Developed multiple full-stack projects.</li>
+<li>Participated in technical workshops.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Higher Secondary Certificate</h3>
+<p>Zen School | 2022</p>
+
+<ul>
+<li>Science stream with Computer Science.</li>
+<li>Strong foundation in mathematics and programming.</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="card contact">
+
+<p>Email: aryan1maheshwari2389@gmail.com</p>
+
+<p>Phone: +91 8780150579</p>
+
+<p>Location: Ahmedabad, India</p>
+
+<p>LinkedIn: linkedin.com/in/aryan-maheshwari</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 Aryan Maheshwari
+
+</footer>
+
+</body>
+</html>
