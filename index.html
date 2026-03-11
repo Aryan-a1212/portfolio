@@ -1,0 +1,325 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aryan Maheshwari | Cloud & Linux Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#020617;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:#cbd5f5;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+color:white;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin-top:10px;
+font-size:18px;
+color:#94a3b8;
+}
+
+.btn{
+margin-top:25px;
+padding:12px 28px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+color:#020617;
+font-weight:600;
+cursor:pointer;
+}
+
+/* SECTIONS */
+
+section{
+padding:90px 10%;
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+font-size:34px;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+/* CARD */
+
+.card{
+background:#020617;
+padding:30px;
+border-radius:10px;
+border:1px solid #1e293b;
+margin-bottom:20px;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#020617;
+padding:15px;
+border-radius:8px;
+border:1px solid #1e293b;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.project{
+background:#020617;
+padding:20px;
+border-radius:10px;
+border:1px solid #1e293b;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:25px;
+background:#020617;
+margin-top:40px;
+color:#64748b;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Aryan</h2>
+<ul>
+<li><a href="#about">Profile</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Aryan <span>Maheshwari</span></h1>
+<p>Cloud & Linux Engineer | DevOps Enthusiast</p>
+<button class="btn">Download Resume</button>
+</section>
+
+<section id="about">
+<h2 class="title">Profile</h2>
+
+<div class="card">
+Final-year B.Tech student with strong knowledge of Linux administration and AWS cloud fundamentals. Experienced with DevOps tools, automation scripting, and infrastructure management through projects and internships.
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill"><b>Cloud</b><br>AWS (EC2, S3, Lambda, API Gateway, DynamoDB, IAM)</div>
+
+<div class="skill"><b>DevOps</b><br>Docker, Git/GitHub, CI/CD (GitHub Actions), Jira</div>
+
+<div class="skill"><b>Monitoring</b><br>CloudWatch, CloudTrail, AWS Config</div>
+
+<div class="skill"><b>Linux</b><br>Ubuntu, RedHat, CentOS, Shell Scripting</div>
+
+<div class="skill"><b>Networking</b><br>TCP/IP, DNS, HTTP, HTTPS, SSH</div>
+
+<div class="skill"><b>Programming</b><br>Python, Bash, JSON</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="title">Experience</h2>
+
+<div class="card">
+
+<h3>Linux & Cloud Intern — Grras IT Solutions</h3>
+<p>Nov 2025 – Feb 2026 | Ahmedabad</p>
+
+<ul>
+<li>Worked on Linux system administration and automation scripting</li>
+<li>Managed server configurations, users, and package installations</li>
+<li>Gained hands-on AWS cloud fundamentals</li>
+<li>Implemented basic CI/CD workflows using Git and GitHub</li>
+<li>Monitored server performance and logs</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Log Analyzer & Report Generator</h3>
+<p>Bash automation tool that analyzes Linux logs and generates daily reports for error monitoring.</p>
+</div>
+
+<div class="project">
+<h3>College Timetable Generator</h3>
+<p>MERN stack system for automated timetable generation with conflict detection and Excel upload.</p>
+</div>
+
+<div class="project">
+<h3>Skill Swap Platform</h3>
+<p>Web platform enabling peer-to-peer skill exchange with modern UI and API integration.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+B.Tech (Computer Science Engineering) — Parul University  
+2022 – 2026
+</div>
+
+<div class="card">
+Higher Secondary Certificate — Zen School  
+2022
+</div>
+
+<div class="card">
+Secondary School Certificate — Tree House High School  
+2020
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact card">
+
+<p>Email: aryan1maheshwari2389@gmail.com</p>
+<p>Phone: +91 8780150579</p>
+<p>Location: Ahmedabad, India</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Aryan Maheshwari | Cloud & Linux Engineer
+</footer>
+
+</body>
+</html>
+```
