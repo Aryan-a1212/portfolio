@@ -3,54 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aryan Maheshwari | Cloud & DevOps Engineer</title>
+<title>Aryan Maheshwari | Cloud & Linux Engineer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
-body{background:#020617;color:#e2e8f0;overflow-x:hidden;}
-
-/* NAV */
+body{background:#020617;color:#e2e8f0;overflow-x:hidden;scroll-behavior:smooth;}
 nav{position:fixed;width:100%;top:0;display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:rgba(2,6,23,0.7);backdrop-filter:blur(10px);z-index:1000;}
 nav h2{color:#38bdf8;}
 nav ul{display:flex;gap:25px;list-style:none;}
 nav a{color:#cbd5f5;text-decoration:none;transition:0.3s;}
 nav a:hover{color:#38bdf8;}
-
-/* HERO */
 .hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
 .hero h1{font-size:70px;opacity:0;}
 .hero span{color:#38bdf8;}
-.hero p{margin-top:15px;color:#94a3b8;max-width:600px;opacity:0;}
-
+.hero p{margin-top:15px;color:#94a3b8;max-width:700px;opacity:0;line-height:1.6;}
 .btn{margin-top:30px;padding:14px 30px;border-radius:8px;background:#38bdf8;color:#020617;font-weight:600;text-decoration:none;opacity:0;}
-
-/* SECTIONS */
 section{padding:100px 12%;max-width:1200px;margin:auto;}
 .title{font-size:34px;margin-bottom:30px;color:#38bdf8;opacity:0;}
-
-.card,.project-card{background:#020617;padding:25px;border-radius:12px;border:1px solid #1e293b;margin-bottom:20px;transform:translateY(50px);opacity:0;}
+.card,.project-card{background:rgba(2,6,23,0.85);padding:25px;border-radius:12px;border:1px solid #1e293b;margin-bottom:20px;transform:translateY(50px);opacity:0;box-shadow:0 10px 20px rgba(0,0,0,0.5);}
 .card:hover,.project-card:hover{transform:translateY(-6px);border-color:#38bdf8;}
-
-footer{text-align:center;padding:25px;background:#020617;color:#64748b;}
-
-@media(max-width:768px){
-.hero h1{font-size:40px;}
-nav ul{display:none;}
-}
+footer{text-align:center;padding:25px;background:#020617;color:#64748b;margin-top:50px;}
+ul{margin-top:10px;padding-left:20px;} 
+li{margin-bottom:6px;}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.skill-box{background:#1e293b;padding:20px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.3);opacity:0;transform:translateY(50px);}
+.skill-box h4{color:#38bdf8;margin-bottom:10px;}
+.skill-box p{color:#94a3b8;line-height:1.5;}
+.about-internship-grid{display:grid;grid-template-columns:1fr;gap:20px;}
+@media(min-width:900px){.about-internship-grid{grid-template-columns:1fr 1fr;}}
+#internship .card{border-left:4px solid #38bdf8;}
+@media(max-width:768px){.hero h1{font-size:40px;} nav ul{display:none;}}
 </style>
 </head>
 
 <body>
 
 <nav>
-<h2>Aryan</h2>
+<h2>Aryan Maheshwari</h2>
 <ul>
 <li><a href="#about">About</a></li>
+<li><a href="#internship">Internship</a></li> <!-- new -->
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
@@ -59,24 +55,60 @@ nav ul{display:none;}
 
 <section class="hero">
 <h1 id="hero-title">Aryan <span>Maheshwari</span></h1>
-<p id="hero-text">Cloud & DevOps Engineer building scalable infrastructure & automation systems.</p>
+<p id="hero-text">Cloud & Linux Engineer with expertise in AWS, DevOps tools, Linux administration, and infrastructure automation. Passionate about designing scalable solutions and learning cutting-edge technologies.</p>
 <a href="#" class="btn" id="hero-btn">Download Resume</a>
 </section>
 
 <section id="about">
 <h2 class="title">About Me</h2>
-<div class="card">Final-year CSE student specializing in Linux, AWS, and DevOps tools. Passionate about automation, cloud infrastructure, and scalable systems.</div>
+<div class="about-internship-grid">
+  <div class="card" style="text-align:center;">
+    <p>Final-year B.Tech student with solid knowledge of Linux administration and Cloud computing (AWS fundamentals), along with practical exposure to DevOps tools such as Docker, Git, and CI/CD pipelines. Experienced in shell scripting, server monitoring, and infrastructure automation through projects and internship. Always eager to learn and implement efficient real-world solutions.</p>
+  </div>
+
+  <div id="internship">
+    <h2 class="title">Internship</h2>
+    <div class="card" style="text-align:center;">
+      <p><b>Grras IT Solutions (Oct 2025 – Feb 2026)</b></p>
+      <ul style="text-align:left; margin-top:10px;">
+        <li>Handled Linux administration and shell scripting.</li>
+        <li>Server monitoring and automation tasks.</li>
+        <li>Implemented AWS fundamentals including EC2, S3, and IAM basics.</li>
+        <li>Worked with basic CI/CD workflows and Git/GitHub version control.</li>
+        <li>Participated in real-world projects to optimize infrastructure.</li>
+      </ul>
+    </div>
+  </div>
+</div>
 </section>
 
 <section id="skills">
 <h2 class="title">Skills</h2>
-<div class="card">
-<ul>
-<li>AWS, EC2, S3, Lambda</li>
-<li>Docker, CI/CD</li>
-<li>Linux, Bash</li>
-<li>Networking & Security</li>
-</ul>
+<div class="skills-grid">
+<div class="skill-box">
+<h4>Cloud</h4>
+<p>AWS: EC2, S3, Lambda, API Gateway, DynamoDB, CloudFormation, IAM, Cognito.</p>
+</div>
+<div class="skill-box">
+<h4>Monitoring</h4>
+<p>CloudWatch, CloudTrail, AWS Config. Hands-on monitoring and tracking of cloud resources and system activities.</p>
+</div>
+<div class="skill-box">
+<h4>Programming & Scripting</h4>
+<p>Python, Bash, Shell scripting for automation. Working knowledge of JSON and YAML.</p>
+</div>
+<div class="skill-box">
+<h4>DevOps & Containerization</h4>
+<p>Docker, Git/GitHub, CI/CD pipelines, Jira. Automating workflows and version control.</p>
+</div>
+<div class="skill-box">
+<h4>Linux & Networking</h4>
+<p>Ubuntu, RedHat, CentOS. TCP/IP, DNS, SSH, HTTP/HTTPS. User management, package handling, cron jobs.</p>
+</div>
+<div class="skill-box">
+<h4>Virtualization</h4>
+<p>VMware, VirtualBox. VM creation, snapshots, basic virtual network configuration.</p>
+</div>
 </div>
 </section>
 
@@ -84,23 +116,42 @@ nav ul{display:none;}
 <h2 class="title">Projects</h2>
 <div class="project-card">
 <h3>Log Analyzer & Report Generator</h3>
-<p>Bash-based automation tool to analyze Linux server logs and generate daily error reports. Integrates cron jobs for automated execution, streamlining server monitoring and maintenance.</p>
+<ul>
+<li>Bash automation tool to parse Linux server logs.</li>
+<li>Generates structured daily reports highlighting errors.</li>
+<li>Automated via cron jobs for timely monitoring.</li>
+<li>Helps maintain server health and identify recurring issues.</li>
+</ul>
 </div>
 <div class="project-card">
-<h3>College Timetable Generator</h3>
-<p>MERN stack application for creating automated college timetables. Includes Excel upload for teachers, subjects, and slots, with conflict detection and MongoDB storage for structured timetable management.</p>
+<h3>Automatic Timetable Generator</h3>
+<ul>
+<li>Responsive MERN stack web app for academic timetables.</li>
+<li>Excel upload for teachers, subjects, and slots.</li>
+<li>Real-time conflict validation and MongoDB storage.</li>
+<li>Deployed on AWS for reliability and accessibility.</li>
+</ul>
 </div>
 <div class="project-card">
 <h3>Skill Swap Platform</h3>
-<p>Peer-to-peer web platform allowing users to exchange skills. Features responsive design, REST API backend integration, and optimized multi-device user interface for seamless skill sharing.</p>
+<ul>
+<li>Peer-to-peer platform for exchanging skills.</li>
+<li>Responsive frontend with reusable UI components.</li>
+<li>REST API integration and state management.</li>
+<li>Optimized for cross-device compatibility.</li>
+</ul>
 </div>
 </section>
 
 <section id="contact">
 <h2 class="title">Contact</h2>
 <div class="card">
-<p>Email: aryan1maheshwari2389@gmail.com</p>
-<p>Ahmedabad, India</p>
+<ul>
+<li>Email: aryan1maheshwari2389@gmail.com</li>
+<li>Phone: +91 8780150579</li>
+<li>Location: Ahmedabad, India</li>
+<li>LinkedIn: linkedin.com/in/aryan-maheshwari</li>
+</ul>
 </div>
 </section>
 
@@ -109,31 +160,19 @@ nav ul{display:none;}
 <script>
 gsap.registerPlugin(ScrollTrigger);
 
-// HERO animation
+// Hero animation
 gsap.to("#hero-title", {y:0, opacity:1, duration:1});
 gsap.to("#hero-text", {y:0, opacity:1, duration:1, delay:0.3});
 gsap.to("#hero-btn", {y:0, opacity:1, duration:1, delay:0.6});
 
-// SECTION titles
-
+// Section titles
 document.querySelectorAll(".title").forEach(el => {
-gsap.to(el, {
-scrollTrigger:{trigger:el,start:"top 80%"},
-opacity:1,
-y:-20,
-duration:0.8
-});
+  gsap.to(el, {scrollTrigger:{trigger:el,start:"top 80%"},opacity:1,y:-20,duration:0.8});
 });
 
-// cards animation
-
-document.querySelectorAll(".card, .project-card").forEach(el => {
-gsap.to(el, {
-scrollTrigger:{trigger:el,start:"top 85%"},
-y:0,
-opacity:1,
-duration:0.8
-});
+// Cards, projects, skills
+document.querySelectorAll(".card, .project-card, .skill-box").forEach(el => {
+  gsap.to(el, {scrollTrigger:{trigger:el,start:"top 85%"},y:0,opacity:1,duration:0.8});
 });
 </script>
 
