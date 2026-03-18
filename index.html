@@ -33,8 +33,6 @@ li{margin-bottom:6px;}
 .skill-box{background:#1e293b;padding:20px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.3);opacity:0;transform:translateY(50px);}
 .skill-box h4{color:#38bdf8;margin-bottom:10px;}
 .skill-box p{color:#94a3b8;line-height:1.5;}
-.about-internship-grid{display:grid;grid-template-columns:1fr;gap:20px;}
-@media(min-width:900px){.about-internship-grid{grid-template-columns:1fr 1fr;}}
 #internship .card{border-left:4px solid #38bdf8;}
 @media(max-width:768px){.hero h1{font-size:40px;} nav ul{display:none;}}
 </style>
@@ -59,29 +57,30 @@ li{margin-bottom:6px;}
 <a href="#" class="btn" id="hero-btn">Download Resume</a>
 </section>
 
+<!-- About Me Section -->
 <section id="about">
 <h2 class="title">About Me</h2>
-<div class="about-internship-grid">
-  <div class="card" style="text-align:center;">
-    <p>Final-year B.Tech student with solid knowledge of Linux administration and Cloud computing (AWS fundamentals), along with practical exposure to DevOps tools such as Docker, Git, and CI/CD pipelines. Experienced in shell scripting, server monitoring, and infrastructure automation through projects and internship. Always eager to learn and implement efficient real-world solutions.</p>
-  </div>
-
-  <div id="internship">
-    <h2 class="title">Internship</h2>
-    <div class="card" style="text-align:center;">
-      <p><b>Grras IT Solutions (Oct 2025 – Feb 2026)</b></p>
-      <ul style="text-align:left; margin-top:10px;">
-        <li>Handled Linux administration and shell scripting.</li>
-        <li>Server monitoring and automation tasks.</li>
-        <li>Implemented AWS fundamentals including EC2, S3, and IAM basics.</li>
-        <li>Worked with basic CI/CD workflows and Git/GitHub version control.</li>
-        <li>Participated in real-world projects to optimize infrastructure.</li>
-      </ul>
-    </div>
-  </div>
+<div class="card">
+<p>Final-year B.Tech student with solid knowledge of Linux administration and Cloud computing (AWS fundamentals), along with practical exposure to DevOps tools such as Docker, Git, and CI/CD pipelines. Experienced in shell scripting, server monitoring, and infrastructure automation through projects and internship. Always eager to learn and implement efficient real-world solutions.</p>
 </div>
 </section>
 
+<!-- Internship Section -->
+<section id="internship">
+<h2 class="title">Internship</h2>
+<div class="card">
+<p><b>Grras IT Solutions (Oct 2025 – Feb 2026)</b></p>
+<ul style="margin-top:10px;">
+<li>Handled Linux administration and shell scripting.</li>
+<li>Server monitoring and automation tasks.</li>
+<li>Implemented AWS fundamentals including EC2, S3, and IAM basics.</li>
+<li>Worked with basic CI/CD workflows and Git/GitHub version control.</li>
+<li>Participated in real-world projects to optimize infrastructure.</li>
+</ul>
+</div>
+</section>
+
+<!-- Skills Section -->
 <section id="skills">
 <h2 class="title">Skills</h2>
 <div class="skills-grid">
@@ -112,6 +111,7 @@ li{margin-bottom:6px;}
 </div>
 </section>
 
+<!-- Projects Section -->
 <section id="projects">
 <h2 class="title">Projects</h2>
 <div class="project-card">
@@ -143,6 +143,7 @@ li{margin-bottom:6px;}
 </div>
 </section>
 
+<!-- Contact Section -->
 <section id="contact">
 <h2 class="title">Contact</h2>
 <div class="card">
